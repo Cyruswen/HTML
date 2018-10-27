@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptTest</title>
+</head>
+<body>
+<p>一、用Document获取页面标题</p>
+<hr>
+<p>二、用Document访问以下两个表单</p>
+<p>第一个,文本框的值</p>
+<form name="textform">
+	<input type="text" name="textname" value="请输入文本">
+</form>
+<p>第二个,按钮的值</p>
+<form name="submitform">
+	<input type="submit" name="submitname" value="第一个表单内的提交">
+</form>
+<hr>
+<p>下面是获取到的值</p>
+<table border="1" cellpadding="2" cellspacing="4">
+	<tr>
+		<td>获取到的标题是：</td>
+		<td><b><script>document.write(document.title)</script></b></td>
+	</tr>
+	<tr>
+		<td>本页包含的表单：</td>
+		<td><b><script>document.write(document.forms.length)</script></b></td>
+	</tr>
+	<tr>
+		<td>获取到的文本框的值是：</td>
+		<td><b><script>document.write(document.textform.textname.value)</script></b></td>
+	</tr>
+	<tr>
+		<td>获取到的按钮的值是：</td>
+		<td><b><script>document.write(document.submitform.submitname.value)</script></b></td>
+	</tr>
+</table>
+</body>
+</html>
